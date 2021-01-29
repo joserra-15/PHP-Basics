@@ -3,13 +3,16 @@
 $whether = 'met';
 if ($whether == 'met') {
   echo 'We are on Monday';
+  echo '<br>';
 }
 
 //Create a simple condition that evaluates whether the current month is October. If the condition is met, it shows a message of the type "We are in October". Otherwise, if this condition is not met, show the current month in words as it come from DateTime.
 if ($whether == 'met') {
   echo 'We are in October';
+  echo '<br>';
 }else{
   echo date('M');
+  echo '<br>';
 }
 
 //Create a double condition that evaluates:
@@ -21,7 +24,7 @@ if (date('i') < 10) {
 }else{
   echo 'does not meet any conditions';
 }
-
+echo '<br>';
 //Create a switch type control structure to display a different message depending on the current day of the week. You can write any type of message, because the important thing is that you understand how it works and in what cases you can use it.
 switch (date('N')) {
   case 1:
